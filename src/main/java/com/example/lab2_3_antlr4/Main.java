@@ -1,5 +1,7 @@
+package com.example.lab2_3_antlr4;
+
 import org.antlr.v4.runtime.*;
-import org.antlr.v4.runtime.tree.*;
+
 import java.io.*;
 import java.util.*;
 
