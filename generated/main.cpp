@@ -46,7 +46,7 @@ bool shouldSkipToken(int type) {
 bool isErrorToken(int type) {
     // 假设你的词法分析器会将词法错误标记为特定类型
     // 比如不合法的整数（以0开头的八进制但包含8、9）
-    return type == SysyLexer::ERROR_TOKEN; // 根据你的实际错误token类型调整
+    return type == SysyLexer::LEX_ERR; // 根据你的实际错误token类型调整
 }
 
 int main(int argc, const char* argv[]) {
