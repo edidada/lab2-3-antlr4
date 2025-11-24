@@ -1,0 +1,1 @@
+sellect * from a;

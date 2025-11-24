@@ -59,8 +59,8 @@
                     <execution>
                         <id>antlr</id>
                         <configuration>
-                            <libDirectory>src/main/antlr4</libDirectory>
-                            <listener>true</listener>
+                            <libDirectory>src/main/antlr4/imports/mysql/</libDirectory>
+                            <listener>false</listener>
                             <visitor>true</visitor>
                         </configuration>
                         <goals>
