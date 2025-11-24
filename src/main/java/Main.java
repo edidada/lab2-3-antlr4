@@ -77,7 +77,7 @@ public class Main {
 
                 // 处理词法错误
                 if (isErrorToken(type)) {
-                    System.out.println("Lexical error - " + line + " : " + text);
+                    System.out.println("Lexical error - line " + line + " : " + text);
                     continue;
                 }
 
@@ -87,7 +87,7 @@ public class Main {
                     System.out.println(text + " : " + typeName);
                 } else {
                     // 对于未知token，也按错误处理
-                    System.out.println("Lexical error - " + line + " : " + text);
+                    System.out.println("UNKNOWN Lexical error - " + line + " : " + text);
                 }
             }
 
