@@ -38,7 +38,7 @@ public class Main {
 
     // 判断是否是错误token
     private static boolean isErrorToken(int type) {
-        return type == SysyLexer.LEX_ERR; // 根据你的实际错误token类型调整
+        return type == SysyLexer.LEX_ERR || type == SysyLexer.ERR_INT_LIT; // 根据你的实际错误token类型调整
     }
 
     public static void main(String[] args) throws IOException {
