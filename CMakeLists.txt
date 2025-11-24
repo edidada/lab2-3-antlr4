@@ -4,8 +4,8 @@ project(scanner LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+include_directories(/usr/local/include/antlr4-runtime)
 if(APPLE)
-    include_directories(/usr/local/include/antlr4-runtime)
     # 设置 flex 路径
     set(FLEX_HINT_PATHS /usr/local/opt/flex /opt/homebrew/opt/flex)
 
