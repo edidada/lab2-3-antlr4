@@ -235,3 +235,135 @@ make
 ```
 
 
+/Users/ibqo/Develop/git/github/cpp/lab2-3-antlr4/cmake-build-debug/scanner /Users/ibqo/Develop/git/github/cpp/lab2-3-antlr4/test_cases/case_1.c
+int : INT
+main : ID
+( : LP
+) : RP
+{ : LC
+int : INT
+a : ID
+, : COMMA
+b : ID
+; : SEMICOLON
+a : ID
+= : ASSIGN
+10 : INT_LIT
+; : SEMICOLON
+b : ID
+= : ASSIGN
+2 : INT_LIT
+; : SEMICOLON
+return : RETURN
+a : ID
++ : ADD
+  b : ID
+  ; : SEMICOLON
+  } : RC
+
+
+/Users/ibqo/Develop/git/github/cpp/lab2-3-antlr4/cmake-build-debug/scanner /Users/ibqo/Develop/git/github/cpp/lab2-3-antlr4/test_cases/case_2.c
+int : INT
+main : ID
+( : LP
+) : RP
+{ : LC
+int : INT
+a : ID
+, : COMMA
+b : ID
+; : SEMICOLON
+a : ID
+= : ASSIGN
+0xf : INT_LIT
+; : SEMICOLON
+b : ID
+= : ASSIGN
+0xc : INT_LIT
+; : SEMICOLON
+return : RETURN
+a : ID
++ : ADD
+  b : ID
++ : ADD
+  075 : INT_LIT
+  ; : SEMICOLON
+  } : RC
+
+
+/Users/ibqo/Develop/git/github/cpp/lab2-3-antlr4/cmake-build-debug/scanner /Users/ibqo/Develop/git/github/cpp/lab2-3-antlr4/test_cases/case_3.c
+int : INT
+main : ID
+( : LP
+) : RP
+{ : LC
+float : FLOAT
+a : ID
+, : COMMA
+b : ID
+; : SEMICOLON
+int : INT
+c : ID
+= : ASSIGN
+Lexical error - 3 : 085
+; : SEMICOLON
+a : ID
+= : ASSIGN
+020e-04f : FLOAT_LIT
+; : SEMICOLON
+b : ID
+= : ASSIGN
+getfloat : ID
+( : LP
+) : RP
+; : SEMICOLON
+putfloat : ID
+( : LP
+a : ID
++ : ADD
+  b : ID
+  ) : RP
+  ; : SEMICOLON
+  putch : ID
+  ( : LP
+  10 : INT_LIT
+  ) : RP
+  ; : SEMICOLON
+  return : RETURN
+  0 : INT_LIT
+  ; : SEMICOLON
+  } : RC
+
+/Users/ibqo/Develop/git/github/cpp/lab2-3-antlr4/cmake-build-debug/scanner /Users/ibqo/Develop/git/github/cpp/lab2-3-antlr4/test_cases/case_4.c
+int : INT
+main : ID
+( : LP
+) : RP
+{ : LC
+float : FLOAT
+pi : ID
+= : ASSIGN
+3 : INT_LIT
+l14 : ID
+; : SEMICOLON
+float : FLOAT
+r : ID
+= : ASSIGN
+2f : FLOAT_LIT
+; : SEMICOLON
+float : FLOAT
+area : ID
+= : ASSIGN
+pi : ID
+Lexical error - 10 : *
+r : ID
+Lexical error - 10 : *
+r : ID
+; : SEMICOLON
+putfloat : ID
+( : LP
+area : ID
+) : RP
+; : SEMICOLON
+} : RC
+
