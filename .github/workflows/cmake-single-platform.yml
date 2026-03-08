@@ -45,4 +45,14 @@ jobs:
       # Build your program with the given configuration
       run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}}
 
+    - name: Test
+      # Run all test cases
+      run: |
+        cd ${{github.workspace}}/build
+        ./scanner ../test_cases/case_1.c
+        ./scanner ../test_cases/case_2.c
+        ./scanner ../test_cases/case_3.c
+        ./scanner ../test_cases/case_4.c
+        ./scanner ../test_cases/case_5.c
+
 
